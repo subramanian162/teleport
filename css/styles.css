@@ -1,0 +1,131 @@
+body{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: url("https://s3.amazonaws.com/ritalbradley-dev-photos/twinkle-back.gif");
+}
+.color{
+  color: white;
+}
+
+.blink-effect{
+  background-color: white;
+  color: black;
+}
+
+.instruction{
+  display: inline;
+  margin-left: 4%;
+}
+
+#heading{
+  font-family: 'Akronim', cursive;
+  font-size: 60px;
+}
+
+/* Common Styles */
+.container{
+     padding:0;
+}
+.custom-container{
+  border: 1px solid white;
+  margin: 3% 0%;
+  padding: 4% 4% 2% 4%;
+  width: 100%;
+  height: 100%;
+  background: url('https://media.tenor.com/images/0a8321e8f821b659cd838a392e0ed088/tenor.gif');
+  background-repeat: no-repeat;
+}
+
+.dice-result-box{
+  border: 1px solid black;
+  padding: 4px;
+}
+
+.player-side{
+  padding-top: 150px;
+}
+
+/* Game board styles */
+.cell{
+  border: 5px solid transparent;
+  width: 100px;
+  height:70px;
+  text-align: center;
+  margin: 4px;
+  position: relative;
+}
+
+.even-cell{
+  background-color: gray;
+  color: white;
+}
+
+.odd-cell{
+  background-color: yellow;
+  color: black;
+  background: #C33764;
+  background: -webkit-linear-gradient(45deg, #1D2671 10%, #C33764 80%);
+  background: linear-gradient(45deg, #1D2671 10%, #C33764 80%);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.30);
+}
+
+/* Portals styles */
+.portal{
+  border-radius: 25px;
+  width: 40px;
+  height: 40px;
+}
+
+.blue-portal{
+  background-image: url('https://media.tenor.com/images/af63b2021d2ae5ae101831b0939956f6/tenor.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.red-portal{
+    background-image: url('https://media.tenor.com/images/d1a223bb15b96ace1a52b65ceeb9a3ff/tenor.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.landing-portal-one{
+  background-image: url('https://media.tenor.com/images/c91518fd4d04a4a4b4729da98f21111e/tenor.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.landing-portal-two{
+  background-image: url('https://media.tenor.com/images/cb80de37cd0156154ae50a8429be2a0b/tenor.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* Characters styles */
+.character{
+  width: 50px;
+  height: 50px;
+}
+
+.board{
+
+}
+
+.bounce {
+      position:absolute;
+      z-index: 1;
+      -webkit-animation:bounce 1s infinite;
+}
+@-webkit-keyframes bounce {
+      100%     {top:0;}
+      50%      { top:20px; }
+      25%, 75% { top:15px; }
+      0%       { top:5px; }
+}
+
+.player-1{
+  left: 1%;
+}
+
+.player-2{
+  right: 1%;
+}

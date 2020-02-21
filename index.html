@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Teleport & black-hole</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--FontAwesome Link-->
+    <link href="https://fonts.googleapis.com/css?family=Akronim&display=swap" rel="stylesheet">
+
+    <!--Bootstrap script-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+
+    <div class="container p-3">
+      <div class="container p-3 mt-2">
+      <h1 id="heading" class="color">Teleport and Black Hole</h1>
+      </div>
+
+      <div class="custom-container">
+        <h3 class="color">Rules(Hints):</h3>
+        <br>
+        <hr style="border-color:white;">
+        <br>
+        <div class="row">
+          <div class="col">
+            <img class="portal" src="https://media.tenor.com/images/af63b2021d2ae5ae101831b0939956f6/tenor.gif" alt="blue-portal" >
+            <p class="color instruction">Once you enter in to this Teleport which takes you in to another Teleport which is in Higher level cells</p>
+          </div>
+
+
+            <h3 class="color"> -> </h3>
+
+          <div class="col">
+            <img class="portal" src="https://media.tenor.com/images/c91518fd4d04a4a4b4729da98f21111e/tenor.gif" alt="blue-portal" >
+            <p class="color instruction">Here You apper, Once you enter in to the Teleport</p>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+          <div class="col">
+            <img class="portal" src="https://media.tenor.com/images/d1a223bb15b96ace1a52b65ceeb9a3ff/tenor.gif" alt="blue-portal" >
+            <p class="color instruction">Once you enter in to this Black Hole which take you in to Lower level cells</p>
+          </div>
+
+          <h3 class="color"> -> </h3>
+
+          <div class="col">
+            <img class="portal" src="https://media.tenor.com/images/cb80de37cd0156154ae50a8429be2a0b/tenor.gif" alt="blue-portal" >
+            <p class="color instruction ">Here you appear, Once you enter in to Black Hole</p>
+          </div>
+        </div>
+
+        <br>
+        <hr style="border-color:white;">
+        <br>
+        <h5 class="color">Player One Should start the game first!!</h5>
+        <p class="color">(Choose the character among yourself)</p>
+      </div>
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-2 player-side">
+            <img class="m-3" src="assets/images/player_1.png" alt="player1-img">
+            <h1 id="player-one-box" class="color m-4 dice-result-box">0</h1>
+            <button id="player-one-button" class="btn btn-outline-warning m-3" type="button" name="button" onclick="playerOneClicked();">PlayerOne</button>
+            <p class="color">Press either the above Button (or) 'Enter' Key</p>
+          </div>
+
+          <div class="col-md-8 board">
+            <table id="table" align="center">
+              <!--The following code helps to check the individual cell view inside our page-->
+              <!-- <tr>
+                <td class="cell even-cell blink-effect">
+                  1
+                  <br>
+                  <img  class="portal"
+                   src="https://media.tenor.com/images/f388303dd742e9d665bb220556121c11/tenor.gif" alt="portal">
+                  <br>
+                  <img  class="character pig bounce" src="pig.png" alt="pig">
+                  <img  class="character lupid bounce" src="lupid.png" alt="lupid">
+                </td>
+              </tr> -->
+            </table>
+          </div>
+
+          <div class="col-md-2 player-side">
+            <img class="m-3" src="assets/images/player_2.png" alt="player2-img">
+            <h1 id="player-two-box" class="color m-4 dice-result-box">0</h1>
+            <button id="player-two-button" disabled class="m-3 btn btn-outline-danger" type="button" name="button" onclick="playerTwoClicked();">PlayerTwo</button>
+            <p class="color">Press either the above Button (or) 'a' Key</p>
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/game.js" charset="utf-8"></script>
+  </body>
+</html>
